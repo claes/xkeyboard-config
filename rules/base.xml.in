@@ -4516,6 +4516,12 @@
           <_description>Enter on keypad</_description>
         </configItem>
       </option>
+    <option>
+        <configItem>
+          <name>lv3:caps_switch</name>
+          <_description>Caps Lock</_description>
+        </configItem>
+      </option>
     </group>
     <group allowMultipleSelection="false">
       <!-- Tweaking the position of the "Ctrl" key -->
