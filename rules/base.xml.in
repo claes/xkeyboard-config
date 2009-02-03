@@ -4516,7 +4516,7 @@
           <_description>Enter on keypad</_description>
         </configItem>
       </option>
-    <option>
+      <option>
         <configItem>
           <name>lv3:caps_switch</name>
           <_description>Caps Lock</_description>
