@@ -1,10 +1,12 @@
 
-// based on a keyboard map from an 'xkb/symbols/se' file
+// Map movement and some control characters such as Delete and Backspace
+// to third level alphanumeric keys. 
+// The keys have been chosen to follow a "unix tradition" (mixed vi / emacs / 
+// bash influences), while trying to preserve the the most valuable existing 
+// mappings on this level.
 //
-// $XKeyboardConfig$
-// $XFree86: xc/programs/xkbcomp/symbols/se,v 1.5 2003/01/26 02:01:48 dawes Exp $
-
-
+// Claes Holmerson (claesatwork_at_gmail_dot_com)
+ 
 default partial
 xkb_symbols "base" {
 
@@ -21,6 +23,7 @@ xkb_symbols "base" {
 
     key <AD10>  { [         NoSymbol,          NoSymbol, Prior ] }; //p
     key <AB06>  { [         NoSymbol,          NoSymbol, Next ] }; //n
+
 };
 
 
