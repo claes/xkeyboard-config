@@ -1,0 +1,100 @@
+// Map editing keys such as movement and control characters such as 
+// Delete and Backspace to third level alphanumeric keys. 
+// This is useful to keep hands on the home row, or on keyboards
+// where movement keys are badly positioned 
+//
+// Claes Holmerson (claesatwork_at_gmail_dot_com)
+ 
+default partial
+xkb_symbols "base" {
+
+    include "editing(ijkl_move)"
+    include "editing(unix_delete)"
+    include "editing(unix_line)"
+
+};
+
+// Deletion keys following unix tradition
+partial
+xkb_symbols "unix_delete" {
+
+    key <AC03>  { [ NoSymbol, NoSymbol, Delete, Delete ]	}; //d
+    key <AC06>  { [ NoSymbol, NoSymbol, BackSpace, BackSpace ] 	}; //h
+
+};
+
+// Line movement keys (beginning of line, end of line) following unix tradition
+partial
+xkb_symbols "unix_line" {
+
+    key <AC01>  { [ NoSymbol, NoSymbol, Home, Home ]		}; //a
+    key <AD03>  { [ NoSymbol, NoSymbol, End, End ] 		}; //e
+
+};
+
+// Movement keys familiar to vi users
+partial
+xkb_symbols "vi_move" {
+
+    key <AC06>  { [ NoSymbol, NoSymbol, Left, Left ]		}; //h
+    key <AC07>  { [ NoSymbol, NoSymbol, Down, Down ] 		}; //j
+    key <AC08>  { [ NoSymbol, NoSymbol, Up, Up ] 		}; //k
+    key <AC09>  { [ NoSymbol, NoSymbol, Right, Right ] 		}; //l
+
+};
+
+// Movement using keys familar to emacs users
+partial
+xkb_symbols "emacs_move" {
+
+    key <AC01>  { [ NoSymbol, NoSymbol, Home, Home ]		}; //a
+    key <AD03>  { [ NoSymbol, NoSymbol, End, End ] 		}; //e
+    key <AC04>	{ [ NoSymbol, NoSymbol, Right, Right ] 		}; //f
+    key <AB05>	{ [ NoSymbol, NoSymbol, Left, Left ] 		}; //b
+    key <AD10>  { [ NoSymbol, NoSymbol, Up, Up ] 		}; //p
+    key <AB06>  { [ NoSymbol, NoSymbol, Down, Down ] 		}; //n
+
+};
+
+// Movement using an "inverted T", consisting of I J K L keys, conveniently 
+// located under the right hand, home row, and familiar from many games
+partial
+xkb_symbols "ijkl_move" {
+
+    key <AD08>	{ [ NoSymbol, NoSymbol, Up, Up ]		}; //i
+    key <AC07>	{ [ NoSymbol, NoSymbol, Left, Left ]		}; //j
+    key <AC08>	{ [ NoSymbol, NoSymbol, Down, Down ]	     	}; //k
+    key <AC09>	{ [ NoSymbol, NoSymbol, Right, Right ]     	}; //l
+
+};
+
+// Movement using an "inverted T", consisting of W A S D keys, conveniently 
+// located under the right hand, home row, and familar from many games
+partial
+xkb_symbols "wasd_move" {
+
+    key <AD02>	{ [ NoSymbol, NoSymbol, Up, Up ]		}; //w
+    key <AC01>	{ [ NoSymbol, NoSymbol, Left, Left ]		}; //a
+    key <AC02>	{ [ NoSymbol, NoSymbol, Down, Down ]		}; //s
+    key <AC03>	{ [ NoSymbol, NoSymbol, Right, Right ] 		}; //d
+
+};
+
+// Set of editing keys all close to the right hand home row
+// Popularized by Gustavo Duarte, 
+// http://duartes.org/gustavo/blog/post/home-row-computing
+partial
+xkb_symbols "duarte" {
+
+    key <AD07>	{ [ NoSymbol, NoSymbol, Prior, Prior ]		}; //u
+    key <AD08>	{ [ NoSymbol, NoSymbol, Next, Next ]		}; //i
+    key <AD09>	{ [ NoSymbol, NoSymbol, Home, Home ]		}; //o
+    key <AD10>	{ [ NoSymbol, NoSymbol, End, End ]		}; //p
+    key <AC06>	{ [ NoSymbol, NoSymbol, Delete, Delete ]	}; //h
+    key <AC07>	{ [ NoSymbol, NoSymbol, Up, Up ]	 	}; //j
+    key <AC08>	{ [ NoSymbol, NoSymbol, Down, Down ]		}; //k
+    key <AC09>	{ [ NoSymbol, NoSymbol, Left, Left ]		}; //l
+    key <AC10>	{ [ NoSymbol, NoSymbol, Right, Right ]		}; //;
+    key <AB06>	{ [ NoSymbol, NoSymbol, BackSpace, BackSpace ]	}; //n
+
+};
