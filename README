@@ -5,7 +5,7 @@ Example to try it out, after installation:
 
 setxkbmap -layout "se+editing+level3(caps_switch)"
 
-Loads swedish keyboard. Adds cursor key movement (ijkl = ↑←↓→ 
+Loads swedish keyboard. Adds cursor key movement (ijkl = ↑←↓→)
 plus unix-inspired keys for deletion and line movement (h, d, a, e), all
 accessible with AltGr. Additionally, it maps AltGr to Caps Lock.
 
