@@ -9,4 +9,9 @@ Loads swedish keyboard. Adds cursor key movement (ijkl = ↑←↓→)
 plus unix-inspired keys for deletion and line movement (h, d, a, e), all
 accessible with AltGr. Additionally, it maps AltGr to Caps Lock.
 
+More examples:
+
+setxkbmap -layout "us+editing(vi_move)+level3(caps_switch)"
+setxkbmap -layout "dk+editing(emacs_move)+editing(unix_delete)+level3(caps_switch)"
+
 See symbols/editing for additional variants.
