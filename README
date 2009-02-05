@@ -1,2 +1,12 @@
-This is an experimental fork of xkeyboard-config. It initially focuses on adding
-keyboard mappings for cursor movement from the home row. 
+This is an experimental fork of xkeyboard-config. It initially focuses on 
+adding keyboard mappings for cursor movement from the home row. 
+
+Example to try it out, after installation:
+
+setxkbmap -layout "se+editing+level3(caps_switch)"
+
+Loads swedish keyboard. Adds cursor key movement (ijkl = ↑←↓→ 
+plus unix-inspired keys for deletion and line movement (h, d, a, e), all
+accessible with AltGr. Additionally, it maps AltGr to Caps Lock.
+
+See symbols/editing for additional variants.
